@@ -1,0 +1,450 @@
+[
+  {
+    "timestamp": "2026-06-23T18:58:40.207Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "FAILED",
+    "durationMs": 522,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:42.795Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "FAILED",
+    "durationMs": 352,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:43.009Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:43.137Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:43.261Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:43.388Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:43.515Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T18:58:43.639Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:05.525Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "PASSED",
+    "durationMs": 149,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.095Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "PASSED",
+    "durationMs": 104,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.217Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.344Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.475Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.604Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.725Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:10:06.853Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "UNDEFINED",
+    "durationMs": 0,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:50.529Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "PASSED",
+    "durationMs": 140,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:51.408Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "PASSED",
+    "durationMs": 117,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:51.864Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "FAILED",
+    "durationMs": 322,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:52.394Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "FAILED",
+    "durationMs": 316,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:52.947Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 325,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:53.508Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 318,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:54.039Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 315,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:13:54.562Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "FAILED",
+    "durationMs": 314,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:54.671Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "PASSED",
+    "durationMs": 141,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:55.221Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "PASSED",
+    "durationMs": 110,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:55.665Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "FAILED",
+    "durationMs": 313,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:56.215Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "FAILED",
+    "durationMs": 312,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:56.752Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 326,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:57.287Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 320,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:57.815Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 313,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:18:58.360Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "FAILED",
+    "durationMs": 332,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:54.962Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "PASSED",
+    "durationMs": 137,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:55.980Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "PASSED",
+    "durationMs": 116,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:56.593Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "PASSED",
+    "durationMs": 111,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:57.232Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "PASSED",
+    "durationMs": 110,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:57.813Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "PASSED",
+    "durationMs": 109,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:58.396Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "PASSED",
+    "durationMs": 110,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:58.978Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "PASSED",
+    "durationMs": 106,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:20:59.535Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "PASSED",
+    "durationMs": 115,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:36.483Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "FAILED",
+    "durationMs": 586,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:39.065Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "FAILED",
+    "durationMs": 333,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:41.621Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "FAILED",
+    "durationMs": 328,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:44.163Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "FAILED",
+    "durationMs": 319,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:46.729Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 343,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:49.303Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 352,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:51.875Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "FAILED",
+    "durationMs": 330,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:33:54.427Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "FAILED",
+    "durationMs": 332,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:24.841Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successful Login with Valid Credentials",
+    "status": "PASSED",
+    "durationMs": 149,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12345)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:25.454Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Failed Login with Invalid Credentials",
+    "status": "PASSED",
+    "durationMs": 142,
+    "tags": "@authentication, @smoke, @p1, @web, @mobile, @testrail(C12346)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:26.089Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute a successful market order",
+    "status": "PASSED",
+    "durationMs": 119,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12401)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:26.767Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Block trade execution due to insufficient funds",
+    "status": "PASSED",
+    "durationMs": 120,
+    "tags": "@trading, @core, @p1, @high-impact, @web, @mobile, @testrail(C12402)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:27.396Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "PASSED",
+    "durationMs": 112,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:28.028Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "PASSED",
+    "durationMs": 115,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:28.646Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Execute trades for various currency pairs",
+    "status": "PASSED",
+    "durationMs": 117,
+    "tags": "@trading, @core, @p1, @regression, @web, @testrail(C12403)"
+  },
+  {
+    "timestamp": "2026-06-23T19:34:29.231Z",
+    "suite": "e2e-web-playwright",
+    "scenario": "Successfully Deposit Funds",
+    "status": "PASSED",
+    "durationMs": 117,
+    "tags": "@wallet, @regression, @p2, @web, @testrail(C12350)"
+  }
+]

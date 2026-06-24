@@ -1,0 +1,24 @@
+# Node
+node_modules/
+dist/
+
+# C# / .NET
+[B|b]in/
+[O|o]bj/
+qa-control-center/appsettings.Development.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Test Results & Logs
+results/allure-results/
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

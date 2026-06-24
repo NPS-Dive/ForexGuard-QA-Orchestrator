@@ -1,0 +1,18 @@
+Forex-QA-Portfolio/
+├── docs/                                 
+│   ├── 01_Risk_Assessment.md             # Risk matrix for Forex trades
+│   ├── 02_Triage_Rules.md                # Bug classifications & SLA
+│   └── 03_TestRail_Mappings.csv          # Traceability matrix
+├── qa-control-center/                    # [PENDING] C# ASP.NET Core Orchestrator
+├── tests/
+│   ├── e2e-web-playwright/               # [IMPLEMENTED] Web UI E2E
+│   ├── e2e-mobile-appium/                # [IMPLEMENTED] Mobile UI E2E
+│   └── api-perf-k6/                      # [NEXT TARGET] API & Perf (k6 + JS/TS)
+│       ├── src/
+│       │   ├── functional/               # API functional tests
+│       │   ├── performance/              # Load, Stress, Spike, Concurrency
+│       │   └── utils/                    # Auth, Data generation
+│       └── package.json                  # CLI menu commands
+└── results/                              # Output artifacts
+    ├── test_logbook.csv                  
+    └── test_logbook.json

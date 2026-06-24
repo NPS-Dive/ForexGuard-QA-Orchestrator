@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/k6": "^2.0.0",
+    "ts-loader": "^9.6.2",
+    "typescript": "^6.0.3",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
+  },
+   "scripts": {
+    "build": "webpack",
+    "test:functional": "npm run build && k6 run dist/functional/trade-api.js --summary-export=logs/functional-log.json",
+    "test:load": "npm run build && k6 run dist/performance/load-test.js --summary-export=logs/load-log.json",
+    "test:stress": "npm run build && k6 run dist/performance/stress-test.js --summary-export=logs/stress-log.json",
+    "test:spike": "npm run build && k6 run dist/performance/spike-test.js --summary-export=logs/spike-log.json",
+    "test:concurrency": "npm run build && k6 run dist/performance/concurrency-test.js --summary-export=logs/concurrency-log.json",
+    "test:perf:all": "npm run test:load && npm run test:stress && npm run test:spike && npm run test:concurrency",
+    "test:all": "npm run test:functional && npm run test:perf:all"
+  }
+}

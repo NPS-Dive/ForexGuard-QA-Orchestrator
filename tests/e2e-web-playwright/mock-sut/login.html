@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login - Mock Forex App</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="login-form">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit" id="login-button">Log In</button>
+    </form>
+    <div id="error-message" style="color: red; margin-top: 10px;"></div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+
+            if (user === 'qa_user' && pass === 'password123') {
+                // On successful login, redirect to dashboard
+                window.location.href = 'dashboard.html';
+            } else {
+                // On failed login, show error
+                document.getElementById('error-message').textContent = 'Invalid username or password';
+            }
+        });
+    </script>
+</body>
+</html>

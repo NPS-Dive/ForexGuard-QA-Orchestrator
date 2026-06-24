@@ -1,0 +1,12 @@
+TestRail_ID,Title,Component,Test_Type,Automation_Path,Risk_Level,Business_Requirement
+C1001,Successful User Authentication,Auth,WebPlaywright,e2e/features/auth.feature,Medium,Client shall authenticate and authorize
+C1002,Create New Forex Account,Auth,MobileAppium,mobile/tests/account.spec.ts,Medium,Client can make account
+C1003,Deposit Funds to Wallet,Wallet,ApiFunctional,api/tests/functional/wallet.js,High,Client can pay and receive money
+C1004,Withdraw Funds from Wallet,Wallet,ApiFunctional,api/tests/functional/wallet.js,High,Client can pay and receive money
+C1005,Execute Forex Trade Valid Balance,Trade,WebPlaywright,e2e/features/trade.feature,Critical,Client can trade with pair currencies
+C1006,Reject Trade Insufficient Funds,Trade,ApiFunctional,api/tests/functional/trade.js,Critical,Client shall not be allowed to trade if wallet < price
+C1007,Trade Concurrency Race Condition,Trade,ApiConcurrency,api/tests/performance/concurrency.js,Critical,Client shall not be allowed to trade if wallet < price
+C1008,Retrieve Global Trade Logs,Reporting,ApiLoad,api/tests/performance/load.js,Medium,Client shall have log in the system for every transaction
+C1009,Retrieve Pair Specific History,Reporting,ApiSpike,api/tests/performance/spike.js,Medium,Client shall have history for each pair currency
+C1010,System Stability Under Extreme Load,System,ApiStress,api/tests/performance/stress.js,High,Platform SLA requires 99.99% uptime
+C1011,Mobile View Trade History,Reporting,MobileAppium,mobile/tests/history.spec.ts,Low,Client shall have history for each pair currency

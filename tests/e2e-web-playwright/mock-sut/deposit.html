@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Deposit</title></head>
+<body>
+    <h2>Wallet</h2>
+    <p>Balance: $<span id="balance">1000.00</span></p>
+    
+    <input type="text" id="deposit-amount" placeholder="Amount">
+    <button id="deposit-btn" onclick="deposit()">Deposit</button>
+    
+    <div id="success-message" style="color: green;"></div>
+
+    <script>
+        function deposit() {
+            const amount = parseFloat(document.getElementById('deposit-amount').value);
+            const currentBalance = parseFloat(document.getElementById('balance').innerText);
+            document.getElementById('balance').innerText = (currentBalance + amount).toFixed(2);
+            document.getElementById('success-message').innerText = `Deposit of $${amount.toFixed(2)} was successful`;
+        }
+    </script>
+</body>
+</html>

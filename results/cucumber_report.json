@@ -1,0 +1,1093 @@
+[
+  {
+    "description": "  As a registered user of the Forex Trading Platform,\n  I want to log in securely\n  So that I can access my trading account.",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-authentication;successful-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Successful Login with Valid Credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 148827400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 628338399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177834700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "they should be redirected to the account dashboard",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21362900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "a \"Welcome\" message should be visible",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4550400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32130899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@authentication",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 8
+          },
+          {
+            "name": "@web",
+            "line": 8
+          },
+          {
+            "name": "@mobile",
+            "line": 8
+          },
+          {
+            "name": "@testrail(C12345)",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-authentication;failed-login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Failed Login with Invalid Credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 141977099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341767299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the user enters \"invalid_user\" and \"wrong_password\"",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83288999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "an error message \"Invalid username or password\" should be displayed",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5035100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user should remain on the login page",
+            "match": {
+              "location": "step-definitions\\authentication.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5990299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24908800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@authentication",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 15
+          },
+          {
+            "name": "@web",
+            "line": 15
+          },
+          {
+            "name": "@mobile",
+            "line": 15
+          },
+          {
+            "name": "@testrail(C12346)",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-authentication",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User Authentication",
+    "tags": [
+      {
+        "name": "@authentication",
+        "line": 1
+      },
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\authentication.feature"
+  },
+  {
+    "description": "  As a trader,\n  I want to execute currency pair trades,\n  So I can speculate on the market.",
+    "elements": [
+      {
+        "description": "",
+        "id": "forex-trade-execution;execute-a-successful-market-order",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Execute a successful market order",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119039999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is logged in",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 333749699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "they have a funded trading account with a balance of $10,000.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73349000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "the live market price for EUR/USD is 1.0750",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "the user places a BUY market order for 1,000 units of \"EUR/USD\"",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67691600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the trade should be executed successfully",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5129799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "a new position for \"EUR/USD\" should appear in their portfolio",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4412699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "their account balance should be updated correctly reflecting the trade cost",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4073199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25313200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trading",
+            "line": 1
+          },
+          {
+            "name": "@core",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 12
+          },
+          {
+            "name": "@web",
+            "line": 12
+          },
+          {
+            "name": "@testrail(C12401)",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "forex-trade-execution;block-trade-execution-due-to-insufficient-funds",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Block trade execution due to insufficient funds",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119729000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is logged in",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 333945099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "they have a funded trading account with a balance of $10,000.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69861800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "they have a funded trading account with a balance of $500.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48173099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the cost to buy 100,000 units of \"GBP/JPY\" exceeds the account balance",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "the user attempts to place a BUY market order for 100,000 units of \"GBP/JPY\"",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67011700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the order should be rejected",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4045500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "an error message \"Insufficient funds to execute trade\" must be displayed",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3996099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the user's account balance should remain $500.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3671200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24708400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trading",
+            "line": 1
+          },
+          {
+            "name": "@core",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 1
+          },
+          {
+            "name": "@high-impact",
+            "line": 20
+          },
+          {
+            "name": "@web",
+            "line": 20
+          },
+          {
+            "name": "@mobile",
+            "line": 20
+          },
+          {
+            "name": "@testrail(C12402)",
+            "line": 20
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "forex-trade-execution;execute-trades-for-various-currency-pairs",
+        "keyword": "Scenario Outline",
+        "line": 38,
+        "name": "Execute trades for various currency pairs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 112328400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is logged in",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 340246699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "they have a funded trading account with a balance of $10,000.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75651600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "the user is on the trading dashboard",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1039300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user places a BUY market order for 5000 units of \"\"USD/JPY\"\"",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65804600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the trade should be executed successfully",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3698699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "a new position for \"\"USD/JPY\"\" should be visible",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3551699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25494999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trading",
+            "line": 1
+          },
+          {
+            "name": "@core",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          },
+          {
+            "name": "@web",
+            "line": 29
+          },
+          {
+            "name": "@testrail(C12403)",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "forex-trade-execution;execute-trades-for-various-currency-pairs",
+        "keyword": "Scenario Outline",
+        "line": 39,
+        "name": "Execute trades for various currency pairs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 114899300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is logged in",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 346000399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "they have a funded trading account with a balance of $10,000.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74965400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "the user is on the trading dashboard",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 969900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user places a BUY market order for 2500 units of \"\"AUD/CAD\"\"",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60109599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the trade should be executed successfully",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4725899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "a new position for \"\"AUD/CAD\"\" should be visible",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2928399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20087099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trading",
+            "line": 1
+          },
+          {
+            "name": "@core",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          },
+          {
+            "name": "@web",
+            "line": 29
+          },
+          {
+            "name": "@testrail(C12403)",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "forex-trade-execution;execute-trades-for-various-currency-pairs",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Execute trades for various currency pairs",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116738800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is logged in",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 340875799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "they have a funded trading account with a balance of $10,000.00",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79159800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "the user is on the trading dashboard",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 842000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user places a BUY market order for 10000 units of \"\"EUR/GBP\"\"",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51149400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the trade should be executed successfully",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3308399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "a new position for \"\"EUR/GBP\"\" should be visible",
+            "match": {
+              "location": "step-definitions\\trade_execution.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3398199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38158000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@trading",
+            "line": 1
+          },
+          {
+            "name": "@core",
+            "line": 1
+          },
+          {
+            "name": "@p1",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          },
+          {
+            "name": "@web",
+            "line": 29
+          },
+          {
+            "name": "@testrail(C12403)",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "forex-trade-execution",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Forex Trade Execution",
+    "tags": [
+      {
+        "name": "@trading",
+        "line": 1
+      },
+      {
+        "name": "@core",
+        "line": 1
+      },
+      {
+        "name": "@p1",
+        "line": 1
+      }
+    ],
+    "uri": "features\\trade_execution.feature"
+  },
+  {
+    "description": "  As a logged-in user,\n  I want to manage my account funds,\n  So I can prepare for trading.",
+    "elements": [
+      {
+        "description": "",
+        "id": "wallet-management;successfully-deposit-funds",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Successfully Deposit Funds",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 116760999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is logged in with a standard account",
+            "match": {
+              "location": "step-definitions\\wallet_management.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335311899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the user's account balance is $1000.00",
+            "match": {
+              "location": "step-definitions\\wallet_management.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27077000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "the user navigates to the \"Deposit\" page",
+            "match": {
+              "location": "step-definitions\\wallet_management.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "they deposit $500.00 using a valid payment method",
+            "match": {
+              "location": "step-definitions\\wallet_management.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57929299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "they should see a success message \"Deposit of $500.00 was successful\"",
+            "match": {
+              "location": "step-definitions\\wallet_management.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4371799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "their new account balance should be $1500.00",
+            "match": {
+              "location": "step-definitions\\wallet_management.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3370800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22979999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wallet",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@p2",
+            "line": 11
+          },
+          {
+            "name": "@web",
+            "line": 11
+          },
+          {
+            "name": "@testrail(C12350)",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "wallet-management",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Wallet Management",
+    "tags": [
+      {
+        "name": "@wallet",
+        "line": 1
+      },
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features\\wallet_management.feature"
+  }
+]

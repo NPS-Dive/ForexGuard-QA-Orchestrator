@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><title>Trading</title></head>
+<body>
+    <h2>Trading Dashboard</h2>
+    <p>Balance: $<span id="account-balance">10000.00</span></p>
+    
+    <!-- Hidden inputs to let Playwright manipulate the SUT state for testing -->
+    <input type="text" id="setup-balance" placeholder="Set Balance">
+    <button id="set-balance-btn" onclick="setBalance()">Set</button>
+
+    <input type="text" id="trade-units" placeholder="Units">
+    <input type="text" id="trade-pair" placeholder="Pair (e.g. EUR/USD)">
+    <button id="buy-btn" onclick="executeTrade()">BUY</button>
+
+    <div id="trade-status"></div>
+    <div id="error-message" style="color: red;"></div>
+    
+    <ul id="portfolio"></ul>
+
+    <script>
+        function setBalance() {
+            document.getElementById('account-balance').innerText = document.getElementById('setup-balance').value;
+        }
+
+        function executeTrade() {
+            const balanceElement = document.getElementById('account-balance');
+            let balance = parseFloat(balanceElement.innerText.replace(/,/g, ''));
+            const units = parseFloat(document.getElementById('trade-units').value.replace(/,/g, ''));
+            const pair = document.getElementById('trade-pair').value;
+
+            // Mock cost calculation (just an example threshold for the test)
+            const cost = units > 50000 ? units * 1.5 : units * 0.1; 
+
+            if (cost > balance) {
+                document.getElementById('error-message').innerText = "Insufficient funds to execute trade";
+                document.getElementById('trade-status').innerText = "Rejected";
+            } else {
+                balanceElement.innerText = (balance - cost).toFixed(2);
+                document.getElementById('trade-status').innerText = "Success";
+                document.getElementById('error-message').innerText = "";
+                
+                const li = document.createElement('li');
+                li.innerText = pair;
+                document.getElementById('portfolio').appendChild(li);
+            }
+        }
+    </script>
+</body>
+</html>

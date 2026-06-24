@@ -1,0 +1,22 @@
+{
+  "name": "e2e-web-playwright",
+  "version": "1.0.0",
+  "description": "E2E tests for the Forex Trading Web App using Playwright and Cucumber",
+  "main": "index.js",
+  "scripts": {
+  "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require step-definitions/**/*.ts --require support/**/*.ts",
+  "start:sut": "npx http-server mock-sut -p 3000 -c-1"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.9",
+    "csv-writer": "^1.6.0",
+    "http-server": "^14.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}

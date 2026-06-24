@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Forex QA Control Center";
+}
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h1 class="display-5 fw-bold">Forex QA Portfolio Orchestrator</h1>
+            <p class="lead text-muted">Centralized dashboard for executing Automated E2E and API Performance tests.</p>
+        </div>
+    </div>
+
+    <!-- Test Triggers -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+        
+        <!-- E2E Web Tests -->
+        <div class="col">
+            <div class="card h-100 border-primary shadow-sm">
+                <div class="card-header bg-primary text-white">E2E Web (Playwright)</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Executes BDD scenarios against the web application using Playwright.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="WebPlaywright" />
+                        <button type="submit" class="btn btn-outline-primary w-100">Run Web E2E</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- E2E Mobile Tests -->
+        <div class="col">
+            <div class="card h-100 border-success shadow-sm">
+                <div class="card-header bg-success text-white">E2E Mobile (Appium)</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Executes behave features for iOS/Android apps using Appium.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="MobileAppium" />
+                        <button type="submit" class="btn btn-outline-success w-100">Run Mobile E2E</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Functional -->
+        <div class="col">
+            <div class="card h-100 border-info shadow-sm">
+                <div class="card-header bg-info text-dark">API Functional (k6)</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Executes functional validations against the Trade APIs.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="ApiFunctional" />
+                        <button type="submit" class="btn btn-outline-info w-100">Run API Functional</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Performance: Load -->
+        <div class="col">
+            <div class="card h-100 border-warning shadow-sm">
+                <div class="card-header bg-warning text-dark">API Load Test</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Simulates expected normal concurrent user loads.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="ApiLoad" />
+                        <button type="submit" class="btn btn-outline-warning w-100">Run Load Test</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Performance: Stress -->
+        <div class="col">
+            <div class="card h-100 border-danger shadow-sm">
+                <div class="card-header bg-danger text-white">API Stress Test</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Pushes the system beyond limits to check stability.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="ApiStress" />
+                        <button type="submit" class="btn btn-outline-danger w-100">Run Stress Test</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Performance: Spike -->
+        <div class="col">
+            <div class="card h-100 border-dark shadow-sm">
+                <div class="card-header bg-dark text-white">API Spike Test</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Sudden, extreme bursts of traffic to test auto-scaling.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="ApiSpike" />
+                        <button type="submit" class="btn btn-outline-dark w-100">Run Spike Test</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Performance: Concurrency -->
+        <div class="col">
+            <div class="card h-100 border-secondary shadow-sm">
+                <div class="card-header bg-secondary text-white">API Concurrency Test</div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text text-muted mb-4">Tests race conditions with simultaneous trade executions.</p>
+                    <form asp-controller="Home" asp-action="RunTest" method="post" class="mt-auto">
+                        <input type="hidden" name="testType" value="ApiConcurrency" />
+                        <button type="submit" class="btn btn-outline-secondary w-100">Run Concurrency Test</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Output Console -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card shadow-sm border-dark">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Test Runner Output Console</h5>
+                </div>
+                <div class="card-body bg-light">
+                    @if (!string.IsNullOrEmpty(ViewBag.TestOutput))
+                    {
+                        <pre class="mb-0 text-break" style="max-height: 600px; overflow-y: auto; font-family: monospace; font-size: 0.9em; white-space: pre-wrap;">@ViewBag.TestOutput</pre>
+                    }
+                    else
+                    {
+                        <p class="text-muted mb-0 fst-italic">Waiting for test execution...</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
