@@ -1,24 +1,51 @@
-# Node
+# =========================
+# C# / ASP.NET Core
+# =========================
+qa-control-center/bin/
+qa-control-center/obj/
+*.user
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+
+# =========================
+# Node.js / TypeScript (Web Playwright & k6)
+# =========================
 node_modules/
 dist/
+npm-debug.log
+yarn-error.log
 
-# C# / .NET
-[B|b]in/
-[O|o]bj/
-qa-control-center/appsettings.Development.json
+# Playwright & Allure
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+allure-results/
+allure-report/
 
-# Python
+# =========================
+# Python (Mobile Appium)
+# =========================
 __pycache__/
 *.py[cod]
-.venv/
+*$py.class
 venv/
+env/
 .pytest_cache/
 
-# Test Results & Logs
-results/allure-results/
-logs/
-*.log
-
-# OS generated files
+# =========================
+# OS & IDE Files
+# =========================
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+*.suo
+
+# =========================
+# Local Test Data & Logs
+# =========================
+logs/
+# Note: We are deliberately NOT ignoring the results/ folder 
+# because we want the logbook.json/csv to be tracked as part of the portfolio.
