@@ -1,0 +1,70 @@
+{
+  "uid": "forexguard-perf-01",
+  "title": "ForexGuard API Performance & Concurrency",
+  "tags": ["k6", "forex", "qaqc", "performance"],
+  "timezone": "browser",
+  "schemaVersion": 30,
+  "refresh": "5s",
+  "panels": [
+    {
+      "title": "Active Traders (Virtual Users)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "measurement": "vus",
+          "query": "SELECT mean(\"value\") FROM \"vus\" WHERE $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true
+        }
+      ]
+    },
+    {
+      "title": "Trade Execution Latency (Response Time)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        {
+          "measurement": "http_req_duration",
+          "query": "SELECT mean(\"value\") AS \"Avg\", percentiles(\"value\", 95) AS \"p95\", percentiles(\"value\", 99) AS \"p99\" FROM \"http_req_duration\" WHERE $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true
+        }
+      ]
+    },
+    {
+      "title": "API Throughput (Requests per Second)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "targets": [
+        {
+          "measurement": "http_reqs",
+          "query": "SELECT rate(sum(\"value\")) FROM \"http_reqs\" WHERE $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true
+        }
+      ]
+    },
+    {
+      "title": "Failed Transactions (Error Rate)",
+      "type": "stat",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "targets": [
+        {
+          "measurement": "http_req_failed",
+          "query": "SELECT sum(\"value\") FROM \"http_req_failed\" WHERE $timeFilter",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": { "mode": "thresholds" },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "red", "value": 1 }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
