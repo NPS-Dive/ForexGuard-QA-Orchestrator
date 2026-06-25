@@ -46,6 +46,7 @@ To demonstrate polyglot proficiency and use the best tool for each layer, this p
 ├── docker-compose.yml         # InfluxDB and Grafana infrastructure setup
 └── README.md
 
+```
 ---
 
 ## 💼 Business Domain & Test Coverage (Forex Trading)
